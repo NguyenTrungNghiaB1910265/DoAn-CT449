@@ -6,24 +6,18 @@
                 <li class="breadcrumb-item active" aria-current="page">Hiệu chỉnh bài review</li>
             </ol>
         </nav>
-        <h4>Hiệu chỉnh bài đăng</h4> 
-        <DetailPost
-            :film="film" 
-            @submit:film="updateFilm" 
-            @delete:film="deleteFilm" 
-        />
+        <h4>Chi tiết bài đăng</h4> 
+        <DetailPost :film="film" />
         <p>{{ message }}</p> 
     </div> 
 </template> 
 
-<script> 
-import FilmForm from "@/components/FilmForm.vue";
+<script>
 import FilmService from "@/services/film.service"; 
 import DetailPost from "@/components/DetailPost.vue";
 
 export default { 
     components: { 
-        FilmForm,
         DetailPost, 
     },
     props: { 
@@ -53,25 +47,7 @@ export default {
             } 
         },
         
-        async updateFilm(data) {
-            try {
-                await FilmService.update(this.film._id, data);
-                this.message = "Bài đăng được cập nhật thành công.";
-            } catch (error) {
-                console.log(error);
-            } 
-        },
         
-        async deleteFilm() { 
-            if (confirm("Bạn muốn xóa bài đăng này?")) {
-                try {
-                    await FilmService.delete(this.film._id);
-                    this.$router.push({ name: "reviewfilm" });
-                } catch (error) {
-                    console.log(error);
-                }
-            }
-        },
     },
     created() { 
         this.getFilm(this.id);
@@ -79,3 +55,10 @@ export default {
     }, 
 };
 </script>
+
+<style scoped>
+.page {
+     text-align: left;
+     max-width: 1200px;
+ }
+</style>

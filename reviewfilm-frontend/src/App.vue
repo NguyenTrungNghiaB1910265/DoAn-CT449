@@ -8,7 +8,7 @@ export default {
 };
 </script>
 <template>
-  <div id="app"> 
+  <div id="app" class="bg-light"> 
     <AppHeader /> 
     <div class="container"> 
       <router-view /> 

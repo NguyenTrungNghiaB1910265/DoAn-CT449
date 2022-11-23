@@ -3,50 +3,89 @@
         <div class="col-md-12">
             <InputSearch v-model="searchText" />
         </div>
-        <div class="mt-12 col-md-12">
+        <div class="col-md-12 ">
             <!-- <h4>
                 <i class="fa-solid fa-bars"></i>
                 Trang chủ
             </h4> -->
             <!-- CAROUSEL -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="https://ghienreview.com/wp-content/uploads/2022/03/Ghienreview-The-Adam-Project-02-min.jpg" class="d-block w-100 img-fluid" alt="1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Review phim The Adam Project – Chuyến du hành thời gian nhiều cảm xúc</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col-8">
+                        <div id="carouselExampleCaptions shadow " class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <!-- <li data-target="#carouselExampleCaptions" data-slide-to="2"></li> -->
+                            </ol>
+                            <div class="carousel-inner rounded-lg">
+                                <div class="carousel-item rounded-lg active">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/03/Ghienreview-The-Adam-Project-02-min.jpg" class="d-block w-100 img-fluid" alt="0">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Review phim The Adam Project – Chuyến du hành thời gian nhiều cảm xúc</h5>
+                                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item rounded-lg">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/03/Ghienreview-The-Batman-2022-02-min-1024x576.jpg" class="d-block w-100 img-fluid" alt="1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Review phim The Batman (2022): Màn giải đố dài 3 tiếng đồng hồ</h5>
+                                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
                     </div>
+                    <div class="col-4">
+                        <div id="carouselExampleCaptions shadow " class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner rounded-lg row">
+                                <div class="carousel-item rounded-lg  active">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/04/Ghienreview-Fanstastic-Beasts-3-01-1024x569.jpg" class="d-block w-100 img-fluid" alt="0">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Review phim The Adam Project – Chuyến du hành thời gian nhiều cảm xúc</h5>
+                                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item rounded-lg">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/01/Ghienreview-Ghost-mansion-05-min.jpg" class="d-block w-100 img-fluid" alt="1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Review phim The Batman (2022): Màn giải đố dài 3 tiếng đồng hồ</h5>
+                                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="carousel-inner rounded-lg row mt-3">
+                                <div class="carousel-item rounded-lg active">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/01/Ghienreview-Ghost-mansion-05-min.jpg" class="d-block w-100 img-fluid" alt="0">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Review phim The Adam Project – Chuyến du hành thời gian nhiều cảm xúc</h5>
+                                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                                    </div>
+                                </div>
+                                <div class="carousel-item rounded-lg">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/04/Ghienreview-Fanstastic-Beasts-3-01-1024x569.jpg" class="d-block w-100 img-fluid" alt="1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Review phim The Batman (2022): Màn giải đố dài 3 tiếng đồng hồ</h5>
+                                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                    <img src="https://ghienreview.com/wp-content/uploads/2022/03/Ghienreview-The-Batman-2022-02-min-1024x576.jpg" class="d-block w-100 img-fluid" alt="2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Review phim The Batman (2022): Màn giải đố dài 3 tiếng đồng hồ</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                    </div>
-                    <div class="carousel-item">
-                    <img src="https://ghienreview.com/wp-content/uploads/2022/01/Ghienreview-Sing-2-Dau-truong-am-nhac-2-01-min.jpg" class="d-block w-100 img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Review phim Sing 2 – Đấu trường âm nhạc 2: Dễ thương và bùng cháy</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                    </div>
+                <!-- </div> -->
                 </div>
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </button>
-            </div>
             <!-- LIST CARD -->
             <!-- <div class="row"> -->
                 <!-- <div class="col-6 col-md-4"> -->
