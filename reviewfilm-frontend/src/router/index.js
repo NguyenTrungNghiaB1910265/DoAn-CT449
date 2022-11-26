@@ -36,6 +36,16 @@ const routes = [
         component: () => import("@/views/FilmDetail.vue"),
         props: true
     },
+    {
+        path: "/login",
+        name: "film.login",
+        component: () => import("@/views/FilmLogin.vue"),
+    },
+    {
+        path: "/register",
+        name: "film.register",
+        component: () => import("@/views/FilmRegister.vue"),
+    },
 ];
 const router = createRouter({ 
     history: createWebHistory(import.meta.env.BASE_URL), 

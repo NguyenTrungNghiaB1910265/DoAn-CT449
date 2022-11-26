@@ -12,7 +12,7 @@
         
         <div class="mr-right navbar-nav">
             <li class="nav-item ">
-                <router-link :to="{ name: '' }" class="nav-link">
+                <router-link :to="{ name: 'film.login' }" class="nav-link">
                     <i class="fa-solid fa-user"></i>
                      Đăng nhập
                 </router-link>

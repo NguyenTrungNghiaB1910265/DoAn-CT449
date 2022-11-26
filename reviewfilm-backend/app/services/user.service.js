@@ -1,42 +1,38 @@
 const { ObjectId } = require("mongodb");
 
-class FilmService {
+class UserService {
     constructor(client) {
-        this.Film = client.db().collection("films");
+        this.User = client.db().collection("users");
     }
     // Dinh nghia cac phuong thuc truy xuat CSDL su dung mongodb API
-    extractFilmData(payload) {
-        const film = {
+    
+
+    extractUserData(payload) {
+        const user = {
             name: payload.name,
-            description: payload.description,
-            time: payload.time,
-            director: payload.director,
-            nation: payload.nation,
-            category: payload.category,
-            premiere: payload.premiere,
-            imageURL: payload.imageURL,
-            // favorite: payload.favorite
+            email: payload.email,
+            password: payload.password,
+            address: payload.address,
+            phone: payload.phone,
         };
         // Remove undefined fields
-        Object.keys(film).forEach(
-            (key) => film[key] === undefined && delete film[key]
+        Object.keys(user).forEach(
+            (key) => user[key] === undefined && delete user[key]
         );
-        return film;
+        return user;
     }
 
     
 
     async create(payload) {
-        const film = this.extractFilmData(payload);
-        const result = await this.Film.findOneAndUpdate(
-            film,
-            { $set: { favorite: film.favorite === true } },
+        const user = this.extractUserData(payload);
+        const result = await this.User.findOneAndUpdate(
+            user,
+            { $set: { favorite: user.favorite === true } },
             { returnDocument: "after", upsert: true}
         );
         return result.value;
     }
-
-    
 
     async find(filter) {
         const cursor = await this.Film.find(filter);
@@ -84,6 +80,10 @@ class FilmService {
         return result.deletedCount;
     }
 
+    
+
+    
+
 }
 
-module.exports = FilmService;
+module.exports = UserService;
