@@ -16,7 +16,6 @@
                 <span class="font-weight-bold">Thời lượng: </span>
                 <em>{{film.time}}</em>
             </p> 
-            
         </div> 
         <!-- DIRECTOR -->
         <div class="row">
@@ -57,28 +56,6 @@
         <div class="row">
             <img :src="film.imageURL" alt="">
         </div> 
-        <!-- <div class="form-group form-check"> 
-            <input
-                name="favorite" 
-                type="checkbox" 
-                class="form-check-input" 
-                v-model="film.favorite" 
-            />
-            <p for="favorite" class="form-check-label"> 
-                <strong>Liên hệ yêu thích</strong>
-            </p> 
-        </div>  -->
-        <!-- <div class="form-group"> 
-            <button class="btn btn-primary">Lưu</button> 
-            <button 
-                v-if="film._id" 
-                type="button" 
-                class="ml-2 btn btn-danger" 
-                @click="deleteFilm" 
-            > 
-                Xóa 
-            </button> 
-        </div>  -->
     </div>
     <!-- </Form>  -->
 </template> 

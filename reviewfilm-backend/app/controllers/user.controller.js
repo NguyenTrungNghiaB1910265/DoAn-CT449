@@ -99,7 +99,7 @@ exports.delete = async (req, res, next) => {
     }
 };
 
-// Delete all contacts of a user from the database
+// Delete all films of a user from the database
 exports.deleteAll = async (req, res, next) => {
     try {
         const userService = new UserService(MongoDB.client);
@@ -114,7 +114,7 @@ exports.deleteAll = async (req, res, next) => {
     }
 };
 
-// Find all favorite contacts of a user
+// Find all favorite films of a user
 exports.findAllFavorite = async (_req, res, next) => {
     try {
         const userService = new UserService(MongoDB.client);

@@ -156,19 +156,8 @@ export default {
                 .required("Link hình ảnh phải đúng định dạng và không được bỏ trống.") 
                 .min(2, "Tên phải ít nhất 2 ký tự.") 
                 .max(1000, "Tên có nhiều nhất 50 ký tự."), 
-            // email: yup 
-            //     .string() 
-            //     .email("E-mail không đúng.") 
-            //     .max(50, "E-mail tối đa 50 ký tự."), 
-            // address: yup.string().max(100, "Địa chỉ tối đa 100 ký tự."), 
-            // phone: yup 
-            //     .string() 
-            //     .matches( /((09|03|07|08|05)+([0-9]{8})\b)/g, 
-            //     "Số điện thoại không hợp lệ." 
-            //     ), 
         }); 
         return {
-            // Chúng ta sẽ không muốn hiệu chỉnh props, nên tạo biến cục bộ 
             // filmLocal để liên kết với các input trên form 
             filmLocal: this.film, 
             filmFormSchema,

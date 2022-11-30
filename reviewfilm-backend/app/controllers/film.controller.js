@@ -41,7 +41,7 @@ exports.findAll = async (req, res, next) => {
     return res.send(documents);
 };
 
-// Find a single contact with an id
+// Find a single film with an id
 exports.findOne = async (req, res, next) => {
     try {
         const filmService = new FilmService(MongoDB.client);
@@ -60,7 +60,7 @@ exports.findOne = async (req, res, next) => {
     }
 };
 
-// Update a contact by the id in the request
+// Update a film by the id in the request
 exports.update = async (req, res, next) => {
     if (Object.keys(req.body).length === 0) {
         return next(new ApiError(400, "Data to update can not be empty"));
@@ -80,7 +80,7 @@ exports.update = async (req, res, next) => {
     }
 };
 
-// Delete a contact with the specified id in the request
+// Delete a film with the specified id in the request
 exports.delete = async (req, res, next) => {
     try {
         const filmService = new FilmService(MongoDB.client);
@@ -99,7 +99,7 @@ exports.delete = async (req, res, next) => {
     }
 };
 
-// Delete all contacts of a user from the database
+// Delete all film of a user from the database
 exports.deleteAll = async (req, res, next) => {
     try {
         const filmService = new FilmService(MongoDB.client);
@@ -114,7 +114,7 @@ exports.deleteAll = async (req, res, next) => {
     }
 };
 
-// Find all favorite contacts of a user
+// Find all favorite film of a user
 exports.findAllFavorite = async (_req, res, next) => {
     try {
         const filmService = new FilmService(MongoDB.client);
