@@ -91,17 +91,6 @@
             />
             <ErrorMessage name="imageURL" class="error-feedback" /> 
         </div> 
-        <!-- <div class="form-group form-check"> 
-            <input
-                name="favorite" 
-                type="checkbox" 
-                class="form-check-input" 
-                v-model="filmLocal.favorite" 
-            />
-            <label for="favorite" class="form-check-label"> 
-                <strong>Bài viết yêu thích</strong>
-            </label> 
-        </div>  -->
         <div class="form-group"> 
             <button class="btn btn-primary">Lưu</button> 
             <button 

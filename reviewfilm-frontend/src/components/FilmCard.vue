@@ -36,11 +36,10 @@ export default {
             {{ film.description }} 
         </div> 
         <div class="p-1"> 
-            <img :src="film.imageURL" alt="">
-            
+            <img :src="film.imageURL" class="img-fluid" alt="Responsive image">
         </div> 
         <!-- <div class="p-1"> 
-            <strong>Liên hệ yêu thích:&nbsp;</strong>
+            <strong>Bài viết yêu thích:&nbsp;</strong>
             <i v-if="film.favorite" class="fas fa-check"></i>
             <i v-else class="fas fa-times"></i>
         </div> -->

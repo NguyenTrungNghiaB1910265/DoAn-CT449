@@ -7,10 +7,6 @@ export default {
 </script> 
 <template> 
 
-        <!-- <div class="p-1"> 
-            <strong>Tên:</strong> 
-            {{ film.name }}
-        </div>  -->
         <div class="card" style="width: 18rem;">
             <img src="" class="card-img-top" alt="...">
             <div class="card-body">

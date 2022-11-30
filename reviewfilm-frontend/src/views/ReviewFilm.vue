@@ -6,7 +6,7 @@
         <div class="mt-3 col-md-6">
             <h4>
                 <i class="fa-solid fa-bars"></i>
-                Bài đăng
+                Danh sách bài đăng
             </h4>
             <FilmList v-if="filteredFilmsCount > 0" :films="filteredFilms"
                 v-model:activeIndex="activeIndex" />
@@ -36,17 +36,18 @@
                     Chi tiết bài đăng
                     <i class="fas fa-address-card"></i>
                 </h4>
-                <FilmCard :film="activeFilm" />
                 <router-link 
                     :to="{
                         name: 'film.edit', 
                         params: { id: activeFilm._id }, 
                     }" 
                 >
-                    <span class="mt-2 badge badge-warning"> 
-                        <i class="fas fa-edit"></i> Hiệu chỉnh
-                    </span> 
+                    <button class="btn btn-sm btn-warning">
+                        <i class="fas fa-edit"></i> Chỉnh sửa
+                    </button>
                 </router-link>
+                <FilmCard :film="activeFilm" />
+                
             </div>
         </div>
     </div>

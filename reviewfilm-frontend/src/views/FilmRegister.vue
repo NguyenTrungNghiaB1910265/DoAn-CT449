@@ -2,7 +2,7 @@
     <div v-if="user" class="page">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Đăng ký</li>
             </ol>
         </nav>
@@ -17,7 +17,7 @@
 
 <script> 
 // import FilmForm from "@/components/FilmForm.vue";
-import FilmFormRegister from "../components/FilmFromRegister.vue";
+import FilmFormRegister from "../components/FilmFormRegister.vue";
 // import UserService from "@/services/user.service";
 import UserService from "../services/user.service";
 

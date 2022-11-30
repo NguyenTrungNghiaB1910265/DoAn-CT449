@@ -1,36 +1,27 @@
 <template>
     <div class="page row">
-        <div class="col-md-12">
+        <div class="col-md-12 mt-2">
             <InputSearch v-model="searchText" />
         </div>
-        <div class="col-md-12 ">
-            <!-- <h4>
-                <i class="fa-solid fa-bars"></i>
-                Trang chủ
-            </h4> -->
-            <!-- CAROUSEL -->
-            <!-- <div class="container"> -->
+        <div class="col-md-12 mt-2">
                 <div class="row">
                     <div class="col-8">
                         <div id="carouselExampleCaptions shadow " class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                                <!-- <li data-target="#carouselExampleCaptions" data-slide-to="2"></li> -->
                             </ol>
                             <div class="carousel-inner rounded-lg">
                                 <div class="carousel-item rounded-lg active">
                                     <img src="https://ghienreview.com/wp-content/uploads/2022/03/Ghienreview-The-Adam-Project-02-min.jpg" class="d-block w-100 img-fluid" alt="0">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Review phim The Adam Project – Chuyến du hành thời gian nhiều cảm xúc</h5>
-                                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
                                     </div>
                                 </div>
                                 <div class="carousel-item rounded-lg">
                                     <img src="https://ghienreview.com/wp-content/uploads/2022/03/Ghienreview-The-Batman-2022-02-min-1024x576.jpg" class="d-block w-100 img-fluid" alt="1">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>Review phim The Batman (2022): Màn giải đố dài 3 tiếng đồng hồ</h5>
-                                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
                                     </div>
                                 </div>
                                 
@@ -49,65 +40,31 @@
                         <div id="carouselExampleCaptions shadow " class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner rounded-lg row">
                                 <div class="carousel-item rounded-lg  active">
-                                    <img src="https://ghienreview.com/wp-content/uploads/2022/04/Ghienreview-Fanstastic-Beasts-3-01-1024x569.jpg" class="d-block w-100 img-fluid" alt="0">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/07/Ghienreview-Nguoi-moi-gioi-01-min.jpg" class="d-block w-100 img-fluid" alt="0">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Review phim The Adam Project – Chuyến du hành thời gian nhiều cảm xúc</h5>
-                                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                                        <h5>Review phim Người môi giới: Lời động viên đến những người bất hạnh</h5>
                                     </div>
                                 </div>
                                 <div class="carousel-item rounded-lg">
-                                    <img src="https://ghienreview.com/wp-content/uploads/2022/01/Ghienreview-Ghost-mansion-05-min.jpg" class="d-block w-100 img-fluid" alt="1">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/03/Ghienreview-The-lost-city-04-min.jpeg" class="d-block w-100 img-fluid" alt="1">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Review phim The Batman (2022): Màn giải đố dài 3 tiếng đồng hồ</h5>
-                                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                                        <h5>Review phim The Lost City – Hài nhảm nhạt nhòa uổng phí dàn cast xịn</h5>
                                     </div>
                                 </div>
-                                
                             </div>
                             <div class="carousel-inner rounded-lg row mt-3">
                                 <div class="carousel-item rounded-lg active">
-                                    <img src="https://ghienreview.com/wp-content/uploads/2022/01/Ghienreview-Ghost-mansion-05-min.jpg" class="d-block w-100 img-fluid" alt="0">
+                                    <img src="https://ghienreview.com/wp-content/uploads/2022/07/Ghien-review-Thor-love-and-thunder-03-min-1024x640.jpg" class="d-block w-100 img-fluid" alt="2">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Review phim The Adam Project – Chuyến du hành thời gian nhiều cảm xúc</h5>
-                                        <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                                        <h5>Review phim Thor – Love and Thunder: Hành trình tìm tình yêu vội vã</h5>
                                     </div>
                                 </div>
-                                <div class="carousel-item rounded-lg">
-                                    <img src="https://ghienreview.com/wp-content/uploads/2022/04/Ghienreview-Fanstastic-Beasts-3-01-1024x569.jpg" class="d-block w-100 img-fluid" alt="1">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Review phim The Batman (2022): Màn giải đố dài 3 tiếng đồng hồ</h5>
-                                        <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                                    </div>
-                                </div>
-                                
                             </div>
-                            
                         </div>
                     </div>
-                <!-- </div> -->
                 </div>
-            <!-- LIST CARD -->
-            <!-- <div class="row"> -->
-                <!-- <div class="col-6 col-md-4"> -->
-                    
-                        <!-- <div v-if="activeFilm"> -->
-                            <FilmListFrontEnd v-if="filteredFilmsCount > 0" :films="filteredFilms"/>
-                            
-                        <!-- </div> -->
-                    <!-- <FilmList v-if="filteredFilmsCount > 0" :films="filteredFilms"
-                        v-model:activeIndex="activeIndex" />
-                    <p v-else>Không có bài đăng nào.</p> -->
-
-                <!-- </div> -->
-                <!-- <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                <div class="col-6 col-md-4">.col-6 .col-md-4</div> -->
-            <!-- </div> -->
-
-            
+                <FilmListFrontEnd v-if="filteredFilmsCount > 0" :films="filteredFilms"/>
         </div>
-        <!-- <div class="mt-3 col-md-6">
-           
-        </div> -->
     </div>
 </template> 
 <script>
